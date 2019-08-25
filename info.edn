@@ -1,1 +1,4 @@
-{}
+{:exercises [;; Bindings
+             {:path "exercises/bindings/bindings1.clj" :mode :compile}
+             {:path "exercises/bindings/bindings2.clj" :mode :compile}
+             {:path "exercises/bindings/bindings3.clj" :mode :run}]}

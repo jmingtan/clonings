@@ -4,4 +4,5 @@
   :license {:name "MIT"
             :url "https://mit-license.org/"}
   :dependencies [[org.clojure/clojure "1.10.0"]]
+  :aliases {"clonings" ["run" "-m" "clonings.core"]}
   :repl-options {:init-ns clonings.core})

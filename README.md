@@ -23,7 +23,7 @@ Once done, you should be able to run `lein` in the command-line.
 
 The exercises are sorted by topic, and can be found in `clonings/exercises`.
 
-The task is simple. Most exercises contain an error that keep it from compiling, and it's up to you to fix it! Some exercises are also ran as tests, but rustlings handles them all the same. To run the exercises in the recommended order, execute:
+The task is simple. Most exercises contain an error that keep it from compiling or running, and it's up to you to fix it! Some exercises are also ran as tests, but rustlings handles them all the same. To run the exercises in the recommended order, execute:
 
     lein clonings watch
 
