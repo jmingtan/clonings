@@ -1,6 +1,8 @@
 ;; functions1.clj
 ;; Make me compile! Scroll down for hints :)
 
+(ns functions.functions1)
+
 (defn -main []
   (call-me))
 

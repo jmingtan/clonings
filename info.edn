@@ -7,9 +7,11 @@
              {:path "exercises/control_flow/if2.clj" :mode :run}
              ;; Functions
              {:path "exercises/functions/functions1.clj" :mode :compile}
-             
-             ;; Test?
-             
+             {:path "exercises/functions/functions2.clj" :mode :compile}
+             {:path "exercises/functions/functions3.clj" :mode :compile}
+             {:path "exercises/functions/functions4.clj" :mode :compile}
+             ;; Test 1
+             {:path "exercises/test1.clj" :mode :test}
              ;; Primitives
              ;; Collections
              
