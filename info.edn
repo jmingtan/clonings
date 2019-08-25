@@ -1,4 +1,37 @@
 {:exercises [;; Bindings
              {:path "exercises/bindings/bindings1.clj" :mode :compile}
              {:path "exercises/bindings/bindings2.clj" :mode :compile}
-             {:path "exercises/bindings/bindings3.clj" :mode :run}]}
+             {:path "exercises/bindings/bindings3.clj" :mode :run}
+             ;; Control Flow
+             {:path "exercises/control_flow/if1.clj" :mode :test}
+             {:path "exercises/control_flow/if2.clj" :mode :run}
+             ;; Functions
+             {:path "exercises/functions/functions1.clj" :mode :compile}
+             
+             ;; Test?
+             
+             ;; Primitives
+             ;; Collections
+             
+             ;; Test?
+             
+             ;; Strings
+             
+             ;; Test?
+             
+             ;; Namespaces
+             ;; Macros
+             
+             ;; Test?
+             
+             ;; Unsorted Topics
+             ;; ---------------
+             ;; Sequences
+             ;; Functional
+             ;; Specs
+             ;; Concurrency
+             ;; Protocols
+             ;; Multimethods
+             ;; Java
+             ;; Error handling
+             ]}

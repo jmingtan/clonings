@@ -41,4 +41,6 @@
 ;; Hint: The declaration on line 7 is missing a keyword that is needed in Clojure
 ;; to create a new local binding.
 ;;
+;;
+;;
 ;; Q: What happens if you already have a global var defined with (def)?

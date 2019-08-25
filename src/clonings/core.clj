@@ -1,5 +1,6 @@
 (ns clonings.core
   (:require [clojure.edn :as edn]
+            [clojure.test :refer [test-ns]]
             [juxt.dirwatch :refer [watch-dir close-watcher]]))
 
 (def info-file "info.edn")
@@ -14,14 +15,14 @@
 (defn eval-exercise [exercise]
   (let [{:keys [path mode]} exercise]
     (println "compiling" path)
-    (let [e (load-file path)]
-      (if (= mode :run)
-        (e))
+    (let [e (load-file path)
+          e-ns (-> e symbol namespace symbol)]
+      (condp = mode
+        :compile nil
+        :run     (e)
+        :test    (test-ns e-ns))
       ;; cleanup the namespace for future runs
-      (-> (symbol e)
-          (namespace)
-          (symbol)
-          (remove-ns)))
+      (remove-ns e-ns))
     nil))
 
 (defn eval-all-exercises [exercises]
@@ -47,4 +48,6 @@
       "verify" (eval-all-exercises (:exercises info))
       "watch"  (watch (:exercises info))
       "run"    (eval-exercise {:path (last args)
-                               :mode :run}))))
+                               :mode :run})
+      "test"   (eval-exercise {:path (last args)
+                               :mode :test}))))

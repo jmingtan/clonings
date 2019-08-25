@@ -1,5 +1,5 @@
 ;; bindings3.clj
-;; Make me compile! Scroll down for hints :)
+;; Make me run! Scroll down for hints :)
 
 (ns bindings.bindings3)
 
