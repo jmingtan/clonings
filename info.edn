@@ -12,7 +12,10 @@
              {:path "exercises/functions/functions4.clj" :mode :compile}
              ;; Test 1
              {:path "exercises/test1.clj" :mode :test}
-             ;; Primitives
+             ;; Scalars
+             {:path "exercises/scalars/scalars1.clj" :mode :compile}
+             {:path "exercises/scalars/scalars2.clj" :mode :compile}
+             {:path "exercises/scalars/scalars3.clj" :mode :compile}
              ;; Collections
              
              ;; Test?
@@ -29,8 +32,10 @@
              ;; Unsorted Topics
              ;; ---------------
              ;; Sequences
-             ;; Functional
+             ;; Functional Programming
+             ;; Transducers
              ;; Specs
+             ;; Destructuring
              ;; Concurrency
              ;; Protocols
              ;; Multimethods
