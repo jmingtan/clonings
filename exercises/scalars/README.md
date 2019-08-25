@@ -11,4 +11,5 @@ Scalars are non-collection values:
 - Numbers
 - Regular expressions
 
-https://clojure.org/reference/reader#_literals
+[Scalar Literals](https://clojure.org/reference/reader#_literals)
+[Types of Data](https://clojure.org/reference/data_structures)

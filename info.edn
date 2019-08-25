@@ -16,6 +16,8 @@
              {:path "exercises/scalars/scalars1.clj" :mode :compile}
              {:path "exercises/scalars/scalars2.clj" :mode :compile}
              {:path "exercises/scalars/scalars3.clj" :mode :compile}
+             {:path "exercises/scalars/scalars4.clj" :mode :test}
+             {:path "exercises/scalars/scalars5.clj" :mode :test}
              ;; Collections
              
              ;; Test?
