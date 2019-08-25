@@ -27,7 +27,17 @@ The task is simple. Most exercises contain an error that keep it from compiling 
 
     lein clonings watch
 
-This will try to verify the completion of every exercise in a predetermined order (what we think is best for newcomers). It will also rerun automatically every time you change a file in the `exercises/` directory.
+This will try to verify the completion of every exercise in a predetermined order (what we think is best for newcomers). It will also rerun automatically every time you change a file in the `exercises/` directory. If you want to only run it once, you can use:
+
+    lein clonings verify
+
+This will do the same as watch, but it'll quit after running.
+
+In case you want to go by your own order, or want to only verify a single exercise, you can run:
+
+    lein clonings run exercises/path/to/exercise.clj
+
+In case you get stuck, there is usually a hint at the bottom of each exercise.
 
 ## Testing yourself
 
