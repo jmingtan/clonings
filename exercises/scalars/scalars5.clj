@@ -5,7 +5,7 @@
   (:require [clojure.test :refer [deftest testing is]]))
 
 (deftest test-scalars5
-  (let [x] ;; complete the code here!
+  (let [x ???] ;; complete the code here!
     (is (keyword? x))))
 
 

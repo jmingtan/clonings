@@ -21,7 +21,7 @@ Once done, you should be able to run `lein` in the command-line.
 
 ## Doing exercises
 
-The exercises are sorted by topic, and can be found in `clonings/exercises`.
+The exercises are sorted by topic, and can be found in `clonings/exercises`. For every topic there is an additional README file with some resources to get you started on the topic. We really recommend that you have a look at them before you start.
 
 The task is simple. Most exercises contain an error that keep it from compiling or running, and it's up to you to fix it! Some exercises are also ran as tests, but rustlings handles them all the same. To run the exercises in the recommended order, execute:
 
