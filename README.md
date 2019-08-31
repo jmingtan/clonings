@@ -19,6 +19,8 @@ You'll need to set up the following tools:
 
 Once done, you should be able to run `lein` in the command-line.
 
+Now, also on the command-line, git clone this project and `cd` to the `clonings` directory (or whatever you named your clone's directory).
+
 ## Doing exercises
 
 The exercises are sorted by topic, and can be found in `clonings/exercises`. For every topic there is an additional README file with some resources to get you started on the topic. We really recommend that you have a look at them before you start.
