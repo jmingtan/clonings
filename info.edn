@@ -19,8 +19,12 @@
              {:path "exercises/scalars/scalars4.clj" :mode :test}
              {:path "exercises/scalars/scalars5.clj" :mode :test}
              {:path "exercises/scalars/scalars6.clj" :mode :test}
-             ;; Collections
+             ;; ;; Collections
+             {:path "exercises/collections/lists1.clj" :mode :run}
+             {:path "exercises/collections/vectors1.clj" :mode :run}
              {:path "exercises/collections/collections1.clj" :mode :compile}
+             {:path "exercises/collections/collections2.clj" :mode :test}
+             {:path "exercises/collections/collections3.clj" :mode :test}
              
              ;; Test?
              

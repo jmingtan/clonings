@@ -1,136 +1,126 @@
 ;; collections2.clj
-;; Make me compile by completing each function! Scroll down for hints :)
+;; Make me compile by filling in the parts with ???, scroll down for hints :)
 
 (ns collections.collections2)
 
-(defn find-first
-  "Returns the first element in the given collection"
+(defn add-50
+  "Returns a copy of the collection with the value 50 added!"
   [coll]
-  ;; write your function code here
-  )
+  (let [new-value 50]
+    ;; fill in your code here, using the `conj` function
+    ???
+    ))
 
-(defn find-last
-  "Returns the last element in the given collection"
-  [coll]
-  ;; write your function code here
-  )
+(def a-list '(3 2 1))
 
-(defn find-third
-  "Returns the third element in the given collection"
-  [coll]
-  ;; write your function code here
-  )
+(def a-vector [3 2 1])
+
+(defn -main []
+  (let [;; Can you guess what the first element of my-list will be?
+        my-list       (add-50 a-list)
+        my-list-guess (= (first my-list)
+                         ??? ;; replace this with your guess
+                         )
+        ;; Can you guess what the first element of my-vector will be?
+        my-vector     (add-50 a-vector)
+        my-vec-guess  (= (first my-vector)
+                         ??? ;; replace this with your guess
+                         )]
+    (if my-list-guess
+      (println "your guess for the first element of the list was correct! :)")
+      (println "your guess for the first element of the list was not correct!"))
+    (if my-vec-guess
+      (println "your guess for the first element of the vector was correct! :)")
+      (println "your guess for the first element of the vector was not correct!"))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; Hint: lists and vectors are both ordered collections of items. This array of numbers:
+;;
+;;   1 2 3 4 5
+;;
+;; could be stored equally well in either a list or a vector. The `conj` function has
+;; the following documentation:
+;;
+;; clojure.core/conj
+;; ([coll x] [coll x & xs])
+;;   conj[oin]. Returns a new collection with the xs
+;;     'added'. (conj nil item) returns (item).  The 'addition' may
+;;     happen at different 'places' depending on the concrete type.
+;;
+;; So, the place where `conj` adds the new element actually differs based on whether
+;; you pass in a vector or a list. To summarize the difference:
+;;
+;; vector - a collection backed by a contiguous array
+;; list   - a collection backed by single linked-list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; Hint: Here's a stackoverflow thread with more discussion about vectors and lists
+;; https://stackoverflow.com/questions/17910673/difference-in-behavior-of-conj-on-vectors-and-lists-in-clojure
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ;; ignore this section for now!
-(require '[clojure.test :refer [deftest testing is]])
+(require '[clojure.test :refer [deftest is]])
 
-(deftest test-find-first
-  (testing "finds the first in a list"
-    (is (= 3 (find-first '(3 2 1)))))
-  (testing "finds the first in a vector"
-    (is (= 3 (find-first [3 2 1]))))
-  (testing "finds the first in a map"
-    (is (= [:a 1] (find-first {:a 1 :b 2 :c 3})))))
-
-(deftest test-find-last
-  (testing "finds the last in a list"
-    (is (= 1 (find-last '(3 2 1)))))
-  (testing "finds the last in a vector"
-    (is (= 1 (find-last [3 2 1]))))
-  (testing "finds the last in a map"
-    (is (= [:c 3] (find-last {:a 1 :b 2 :c 3})))))
-
-(deftest test-find-third
-  (testing "finds the third in a list"
-    (is (= 1 (find-third '(3 2 1 0)))))
-  (testing "finds the third in a vector"
-    (is (= 1 (find-third [3 2 1 0]))))
-  (testing "finds the third in a map"
-    (is (= [:c 3] (find-third {:a 1 :b 2 :c 3 :d 4})))))
-
-
-
-
-
-
-
-
-
-
-
-
-;; Hint: in this exercise you will get to see how to write functions that
-;; operate the same way, even when passed different types of collections.
-;; Since we are trying to get a specific index out of a collection, we can
-;; look for functions that work with the "seq" abstraction.
-;; Check out this cheatsheet, under the "Sequences" section!
-;; https://clojure.org/api/cheatsheet
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;; Hint: the third function, `find-third`, is a little tricky to write. This is
-;; because in our tests we are passing in a list, a vector, and a map. If we
-;; just wanted to get the third element from a list and a vector, we could
-;; use the `nth` function, but it doesn't have support for maps. Instead, we
-;; may have to combine several function calls to get what we need.
-;;
-;; There are several ways to solve this, scroll down to see some possible answers
-;; if you get stuck or want to compare your solution!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;; Solution 1
-;; ----------
-;; (defn find-third [coll]
-;;   (first (next (next coll))))
-;;
-;; Solution 2
-;; ----------
-;; (defn find-third [coll]
-;;   (first (nthnext coll 2)))
-;;
-;; Solution 3
-;; ----------
-;; (defn find-third [coll]
-;;   (nth (seq coll) 2))
+(deftest test-add-50
+  (let [result (add-50 '(3 2 1))]
+    (is (= 50 (first result)))
+    (is (= 4 (count result))))
+  (let [result (add-50 [3 2 1])]
+    (is (= 3 (first result)))
+    (is (= 4 (count result)))))
