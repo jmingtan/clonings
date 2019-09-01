@@ -3,8 +3,16 @@
 
 (ns collections.vectors1)
 
-;; vectors are ordered collections of items, created with the [] literal
+;; Vectors are ordered collections of items, created with the [] literal
 (def a-vector [1 2 3 4 5])
+
+;; Here are two possible ways to get an indexed element out of a vector:
+;; First method:
+(nth a-vector 1) ;; returns 2
+;; Second method:
+(a-vector 1)     ;; returns 2
+;; The second method works because the vector type also acts as a function,
+;; which behaves as if calling the `nth` function on it.
 
 ;; try creating your own vector here!
 (def my-vector ???)
