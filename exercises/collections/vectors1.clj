@@ -1,5 +1,5 @@
 ;; vectors1.clj
-;; Make me compile by filling in the ??? parts, scroll down for hints :)
+;; Make me compile by filling in the ??? parts, no hints here!
 
 (ns collections.vectors1)
 
