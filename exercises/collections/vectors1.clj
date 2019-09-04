@@ -18,7 +18,7 @@
 (def my-vector ???)
 
 (defn -main []
-  (if (vector? my-list)
+  (if (vector? my-vector)
     (println "I'm going to be reading your vector now...")
     (do
       (println "Hey! It doesn't look like you've given me a valid vector!")
