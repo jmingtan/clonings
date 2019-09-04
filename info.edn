@@ -27,6 +27,7 @@
              {:path "exercises/collections/collections1.clj" :mode :compile}
              {:path "exercises/collections/collections2.clj" :mode :test}
              {:path "exercises/collections/collections3.clj" :mode :test}
+             {:path "exercises/collections/collections4.clj" :mode :run}
              
              ;; Test?
              
