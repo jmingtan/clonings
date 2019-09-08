@@ -34,10 +34,9 @@
              {:path "exercises/testing/testing3.clj" :mode :test}
              ;; Test 2
              {:path "exercises/test2.clj" :mode :test}
-             
              ;; Strings
-             
-             ;; Test?
+             {:path "exercises/strings/strings1.clj" :mode :test}
+             {:path "exercises/strings/strings2.clj" :mode :test}
              
              ;; Namespaces
              ;; Macros
