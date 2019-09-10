@@ -30,6 +30,7 @@
     (clear-screen)
     (doseq [exercise exercises]
       (eval-exercise exercise))
+    (println "done all exercises - congratulations!")
     (catch Exception ex
       (.printStackTrace ex))))
 
