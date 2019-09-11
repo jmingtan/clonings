@@ -1,5 +1,7 @@
 # clonings
 
+[![CircleCI](https://circleci.com/gh/jmingtan/clonings.svg?style=svg)](https://circleci.com/gh/jmingtan/clonings)
+
 A project for learning Clojure, based on [rustlings](https://github.com/rust-lang/rustlings).
 
 What I liked about rustlings:
