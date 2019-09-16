@@ -19,6 +19,8 @@
              {:path "exercises/scalars/scalars4.clj" :mode :test}
              {:path "exercises/scalars/scalars5.clj" :mode :test}
              {:path "exercises/scalars/scalars6.clj" :mode :test}
+             ;; Reader
+             {:path "exercises/reader/symbols1.clj" :mode :run}
              ;; Collections
              {:path "exercises/collections/lists1.clj"       :mode :run}
              {:path "exercises/collections/vectors1.clj"     :mode :run}
@@ -37,8 +39,10 @@
              ;; Strings
              {:path "exercises/strings/strings1.clj" :mode :test}
              {:path "exercises/strings/strings2.clj" :mode :test}
-             
              ;; Namespaces
+             {:path "exercises/namespaces/require1.clj" :mode :test}
+             {:path "exercises/namespaces/require2.clj" :mode :test}
+
              ;; Macros
              
              ;; Test?
