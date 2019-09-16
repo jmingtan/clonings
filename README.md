@@ -1,3 +1,5 @@
+<img src="./images/clones.jpg" width="400">
+
 # clonings
 
 [![CircleCI](https://circleci.com/gh/jmingtan/clonings.svg?style=svg)](https://circleci.com/gh/jmingtan/clonings)
@@ -46,3 +48,7 @@ In case you get stuck, there is usually a hint at the bottom of each exercise.
 ## Testing yourself
 
 After every couple of sections, there will be a test that'll test your knowledge on a bunch of sections at once. These tests are found in exercises/testN.clj.
+
+## Image Attribution
+
+"Clones" by astrangerathome is licensed under CC BY-NC-SA 2.0 
