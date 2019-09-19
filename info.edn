@@ -42,6 +42,9 @@
              ;; Namespaces
              {:path "exercises/namespaces/require1.clj" :mode :test}
              {:path "exercises/namespaces/require2.clj" :mode :test}
+             {:path "exercises/namespaces/require3.clj" :mode :test}
+             {:path "exercises/namespaces/namespaces1.clj" :mode :test}
+             {:path "exercises/namespaces/namespaces2.clj" :mode :test}
 
              ;; Macros
              
