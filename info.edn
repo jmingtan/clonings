@@ -47,6 +47,7 @@
              {:path "exercises/namespaces/namespaces2.clj" :mode :test}
 
              ;; Macros
+             {:path "exercises/macros/macros1.clj" :mode :test}
              
              ;; Test?
              
