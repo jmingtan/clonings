@@ -1,8 +1,8 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/clojure:lein-2.7.1
+      - image: cimg/clojure:1.11.1
 
     working_directory: ~/repo
 
